@@ -20,6 +20,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+          ref: DIGIT-2.9LTS
     
     - name: Check for changes in deploy-as-code
       id: check_files
